@@ -12,3 +12,10 @@ const About = () => {
     )
 }
 export default About
+
+export function generateMetadata({params}) {
+    return {
+        title: 'about page title',
+        description: 'User page description'
+    }
+}
