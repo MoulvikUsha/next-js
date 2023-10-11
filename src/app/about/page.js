@@ -1,7 +1,12 @@
+'use client'
 import Link from "next/link"
 import { useRouter } from "next/navigation"
+import { useSession } from "next-auth/react"
 
 const About = () => {
+    // const [session, loading] = useSession()
+    // console.log("🚀 ~ file: page.js:7 ~ About ~ session:", sesion)
+    // console.log("🚀 ~ file: page.js:7 ~ About ~ loading:", loading)
     return (
         <>
             <div>About Page</div>

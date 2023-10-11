@@ -4,6 +4,7 @@ import Image from 'next/image'
 import { useRouter } from 'next/navigation'
 import Profile from '../../public/vercel.svg'
 import { Roboto } from 'next/font/google'
+import Navbar from './Navbar'
 
 const robotoFont = Roboto({
   weight: '900',
@@ -24,6 +25,7 @@ export default function Home() {
   }
   return (
     <main>
+      <Navbar />
       <h1>Home Page</h1>
       <h2 className={robotoFont.className}>Font with next js font feature</h2>
       {/* using a s a normal component */}
